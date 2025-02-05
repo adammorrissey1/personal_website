@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Adam Morrissey</title>
+    <meta name="description" content="Get in touch with Adam Morrissey for collaborations or inquiries.">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header Start -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Hamburger Menu Icon -->
+        <div id="hamburger-menu">
+            <span class="menu-icon" aria-label="Open navigation menu">☰</span>
+            <span class="menu-text">Menu</span>
+        </div>
+
+        <!-- Theme Toggle Button -->
         <button id="theme-toggle">Dark Mode</button>
     </header>
+    <!-- Header End -->
 
+    <!-- Sidebar Menu Start -->
+    <nav id="sidebar-menu" class="hidden" aria-label="Sidebar navigation">
+        <ul>
+            <!-- Exclude 'Contact' since we're on the Contact page -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <!-- Sidebar Menu End -->
+
+    <!-- Contact Section Start -->
     <section id="contact">
         <h2>Contact Me</h2>
+        <p>If you have any questions or would like to discuss potential opportunities, feel free to reach out using the form below.</p>
+
         <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
+            <input type="text" id="name" name="name" required aria-required="true">
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
+            <input type="email" id="email" name="_replyto" required aria-required="true">
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send</button>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+            <button type="submit">Send Message</button>
         </form>
     </section>
+    <!-- Contact Section End -->
 
+    <!-- Footer Start -->
     <footer>
         <p>&copy; 2024 Adam Morrissey</p>
+        <div class="social-media">
+            <a href="https://linkedin.com/in/adam-morrissey" target="_blank">LinkedIn</a>
+            <!-- Add more social media links as needed -->
+        </div>
     </footer>
+    <!-- Footer End -->
 
+    <!-- Scripts -->
     <script src="scripts/script.js"></script>
 </body>
 </html>

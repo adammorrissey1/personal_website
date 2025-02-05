@@ -1,42 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Adam Morrissey</title>
+    <meta name="description" content="Explore projects by Adam Morrissey, including machine learning and computational physics applications.">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header Start -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Hamburger Menu Icon -->
+        <div id="hamburger-menu">
+            <span class="menu-icon" aria-label="Open navigation menu">☰</span>
+            <span class="menu-text">Menu</span>
+        </div>
+
+        <!-- Theme Toggle Button -->
         <button id="theme-toggle">Dark Mode</button>
     </header>
+    <!-- Header End -->
 
+    <!-- Sidebar Menu Start -->
+    <nav id="sidebar-menu" class="hidden" aria-label="Sidebar navigation">
+        <ul>
+            <!-- Exclude 'Projects' since we're on the Projects page -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Sidebar Menu End -->
+
+    <!-- Projects Section Start -->
     <section id="projects">
         <h2>Projects</h2>
+
+        <!-- Project 1 -->
         <div class="project">
-            <h3>Music Genre Classification</h3>
-            <p>A machine learning project to classify music genres using TensorFlow.</p>
-            <a href="https://github.com/yourusername/music-genre-classification" target="_blank">View on GitHub</a>
+            <h3>Structural Dynamics of MUC5AC Mucin with Silica Nanoparticles </h3>
+            <p>
+                Investigated the flexibility and metastable states of MUC5AC mucin using molecular dynamics simulations and Markov State Modelling on ICHEC High performance computing systems and conducted molecular docking studies to evaluate the impact of silica nanoparticles on protein stability.
+            </p>
+            <a href="assets/pdfs/Adam Morrissey thesis report version final.pdf" target="_blank">
+                <img src="assets/images/Master's_Project.jpg" alt="Project PDF Thumbnail" class="pdf-thumbnail">
+            </a>
         </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <h3>Music Genre Classification with Deep Learning</h3>
+            <p>
+                Developed and evaluated deep learning models (MLP, CNN, RNN) for music genre classification using the GTZAN dataset, achieving up to 80% accuracy with RNN. Conducted feature extraction using MFCCs, optimized hyperparameters, and implemented regularization techniques to enhance model performance and reduce overfitting.
+            </p>
+            <a href="assets/pdfs/Deep_Learning_Project.pdf" target="_blank">
+                <img src="assets/images/Deep_Learning_Project.jpg" alt="Project PDF Thumbnail" class="pdf-thumbnail">
+            </a>
+        </div>
+
+        <!-- Project 3 -->
         <div class="project">
             <h3>Two-Electron System Simulation</h3>
-            <p>A computational physics project simulating quantum systems using Julia.</p>
-            <a href="https://github.com/yourusername/two-electron-simulation" target="_blank">View on GitHub</a>
+            <p>
+                Created numerical simulations of two-electron interactions and wave packet scattering in one and two dimensions. Applied finite difference methods to calculate and animate probability densities, using symmetry conditions for identical particles.
+            </p>
+            <a href="assets/pdfs/Final_Year_report.pdf" target="_blank">
+                <img src="assets/images/Final_Year_Project.jpg" alt="Project PDF Thumbnail" class="pdf-thumbnail">
+            </a>
         </div>
-    </section>
 
+        <!-- Additional Projects Can Be Added Here -->
+    </section>
+    <!-- Projects Section End -->
+
+    <!-- Footer Start -->
     <footer>
         <p>&copy; 2024 Adam Morrissey</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/adam-morrissey-5b1a9a216/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/adam-morrissey-5b1a9a216/" target="_blank">GitHub</a>
+            <!-- Add more social media links as needed -->
+        </div>
     </footer>
+    <!-- Footer End -->
 
+    <!-- Scripts -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
